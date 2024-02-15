@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-15T19:26:06.580748" rpa="false" schemaversion="5">
+<suite id="s1" name="Voucher" source="C:\Users\mohamed.ali\Desktop\Task\RobotFrameworkTask\test\voucher.robot">
+<test id="s1-t1" name="Verify Back Button in Voucher Screen" line="56">
+<kw name="Open The Application" owner="base">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${remote_url}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>platformName=${platformName}</arg>
+<arg>appPackage=${app_package}</arg>
+<arg>appActivity=${app_activity}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2024-02-15T19:26:06.773053" elapsed="6.036643"/>
+</kw>
+<arg>${remote_url}</arg>
+<arg>${DEVICE_NAME}</arg>
+<arg>${platformName}</arg>
+<arg>${app_package}</arg>
+<arg>${app_activity}</arg>
+<status status="PASS" start="2024-02-15T19:26:06.772055" elapsed="6.037641"/>
+</kw>
+<kw name="Login to App" owner="base">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-02-15T19:26:15.198666" level="INFO">criteria is com.yatechnologies.yassir_rider.preprod:id/iv_flagIcon
+criteria is com.yatechnologies.yassir_rider.preprod:id/iv_flagIcon</msg>
+<arg>${country_Icon}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-02-15T19:26:12.810704" elapsed="2.389468"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-15T19:26:15.202181" level="INFO">Clicking element 'com.yatechnologies.yassir_rider.preprod:id/iv_flagIcon'.</msg>
+<msg time="2024-02-15T19:26:15.280756" level="INFO">criteria is com.yatechnologies.yassir_rider.preprod:id/iv_flagIcon</msg>
+<arg>${country_Icon}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-15T19:26:15.200172" elapsed="0.080584"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-02-15T19:26:16.378677" level="INFO">criteria is com.yatechnologies.yassir_rider.preprod:id/image_country_flag
+criteria is com.yatechnologies.yassir_rider.preprod:id/image_country_flag</msg>
+<arg>${country_choose}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-02-15T19:26:15.280756" elapsed="1.097921"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-15T19:26:16.380231" level="INFO">Clicking element 'com.yatechnologies.yassir_rider.preprod:id/image_country_flag'.</msg>
+<msg time="2024-02-15T19:26:17.283075" level="INFO">criteria is com.yatechnologies.yassir_rider.preprod:id/image_country_flag</msg>
+<arg>${country_choose}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-15T19:26:16.378677" elapsed="0.904398"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-02-15T19:26:17.479682" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.yatechnologies.yassir_rider.preprod:id/text_country_name" and @text="Algeria"]</msg>
+<arg>${Algeria}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-02-15T19:26:17.283075" elapsed="0.196607"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-15T19:26:17.481663" level="INFO">Clicking element '//android.widget.TextView[@resource-id="com.yatechnologies.yassir_rider.preprod:id/text_country_name" and @text="Algeria"]'.</msg>
+<msg time="2024-02-15T19:26:17.596682" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.yatechnologies.yassir_rider.preprod:id/text_country_name" and @text="Algeria"]</msg>
+<arg>${Algeria}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-15T19:26:17.480661" elapsed="0.116021"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-02-15T19:26:17.869890" level="INFO">criteria is com.yatechnologies.yassir_rider.preprod:id/edit_text_phone_number</msg>
+<arg>${phoneNumber}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-02-15T19:26:17.596682" elapsed="0.273208"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2024-02-15T19:26:17.872182" level="INFO">Typing text '555000555' into text field 'com.yatechnologies.yassir_rider.preprod:id/edit_text_phone_number'</msg>
+<msg time="2024-02-15T19:26:18.997141" level="INFO">criteria is com.yatechnologies.yassir_rider.preprod:id/edit_text_phone_number</msg>
+<arg>${phoneNumber}</arg>
+<arg>555000555</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2024-02-15T19:26:17.869890" elapsed="1.127251"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-15T19:26:18.998147" level="INFO">Clicking element 'com.yatechnologies.yassir_rider.preprod:id/button_send'.</msg>
+<msg time="2024-02-15T19:26:19.677164" level="INFO">criteria is com.yatechnologies.yassir_rider.preprod:id/button_send</msg>
+<arg>${sendButton}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-15T19:26:18.997141" elapsed="0.680023"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-02-15T19:26:21.380836" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.yatechnologies.yassir_rider.preprod:id/tvSkip"]
+xpath criteria: //android.widget.TextView[@resource-id="com.yatechnologies.yassir_rider.preprod:id/tvSkip"]
+xpath criteria: //android.widget.TextView[@resource-id="com.yatechnologies.yassir_rider.preprod:id/tvSkip"]</msg>
+<arg>${locationButtonEnable}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-02-15T19:26:19.678165" elapsed="1.702671"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-15T19:26:21.382837" level="INFO">Clicking element '//android.widget.TextView[@resource-id="com.yatechnologies.yassir_rider.preprod:id/tvSkip"]'.</msg>
+<msg time="2024-02-15T19:26:21.478593" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.yatechnologies.yassir_rider.preprod:id/tvSkip"]</msg>
+<arg>${locationButtonEnable}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-15T19:26:21.381836" elapsed="0.096757"/>
+</kw>
+<status status="PASS" start="2024-02-15T19:26:12.809696" elapsed="8.668897"/>
+</kw>
+<kw name="Click profile Icon">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-02-15T19:26:22.822937" level="INFO">criteria is com.yatechnologies.yassir_rider.preprod:id/text_user_name_initial</msg>
+<arg>${profile_icon}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-02-15T19:26:21.479595" elapsed="1.343342"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-15T19:26:22.823937" level="INFO">Clicking element 'com.yatechnologies.yassir_rider.preprod:id/text_user_name_initial'.</msg>
+<msg time="2024-02-15T19:26:22.912767" level="INFO">criteria is com.yatechnologies.yassir_rider.preprod:id/text_user_name_initial</msg>
+<arg>${profile_icon}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-15T19:26:22.822937" elapsed="0.089830"/>
+</kw>
+<status status="PASS" start="2024-02-15T19:26:21.478593" elapsed="1.434174"/>
+</kw>
+<kw name="Navigate to Voucher Section">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-02-15T19:26:24.217389" level="INFO">xpath criteria: (//*[@resource-id="com.yatechnologies.yassir_rider.preprod:id/menu_item_row"])[7]
+xpath criteria: (//*[@resource-id="com.yatechnologies.yassir_rider.preprod:id/menu_item_row"])[7]</msg>
+<arg>${voucher_button}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-02-15T19:26:22.913764" elapsed="1.303625"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-15T19:26:24.218491" level="INFO">Clicking element 'xpath=(//*[@resource-id="com.yatechnologies.yassir_rider.preprod:id/menu_item_row"])[7]'.</msg>
+<msg time="2024-02-15T19:26:24.346327" level="INFO">xpath criteria: (//*[@resource-id="com.yatechnologies.yassir_rider.preprod:id/menu_item_row"])[7]</msg>
+<arg>${voucher_button}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-15T19:26:24.217389" elapsed="0.128938"/>
+</kw>
+<status status="PASS" start="2024-02-15T19:26:22.912767" elapsed="1.433560"/>
+</kw>
+<kw name="Click Back Button Voucher Screen">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-02-15T19:26:25.190622" level="INFO">criteria is com.yatechnologies.yassir_rider.preprod:id/toolbar_left_button_icn
+criteria is com.yatechnologies.yassir_rider.preprod:id/toolbar_left_button_icn</msg>
+<arg>${BackButtonVoucherScreen}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-02-15T19:26:24.347327" elapsed="0.843295"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2024-02-15T19:26:25.191616" level="INFO">Clicking element 'id=com.yatechnologies.yassir_rider.preprod:id/toolbar_left_button_icn'.</msg>
+<msg time="2024-02-15T19:26:25.264509" level="INFO">criteria is com.yatechnologies.yassir_rider.preprod:id/toolbar_left_button_icn</msg>
+<arg>${BackButtonVoucherScreen}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2024-02-15T19:26:25.190622" elapsed="0.074884"/>
+</kw>
+<status status="PASS" start="2024-02-15T19:26:24.346327" elapsed="0.919179"/>
+</kw>
+<kw name="Verify Navigating to Profile Screen">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-02-15T19:26:26.380990" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="com.yatechnologies.yassir_rider.preprod:id/label" and @text="Personal information"]</msg>
+<arg>${Personal_Information}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-02-15T19:26:25.265506" elapsed="1.115484"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-02-15T19:26:26.413272" level="INFO">criteria is com.yatechnologies.yassir_rider.preprod:id/text_name_initial</msg>
+<arg>${Profile_Initial_Name}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-02-15T19:26:26.380990" elapsed="0.032282"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2024-02-15T19:26:26.443502" level="INFO">criteria is com.yatechnologies.yassir_rider.preprod:id/text_phone</msg>
+<arg>${Profile_Text_Phone}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2024-02-15T19:26:26.413272" elapsed="0.030230"/>
+</kw>
+<status status="PASS" start="2024-02-15T19:26:25.265506" elapsed="1.177996"/>
+</kw>
+<doc>Test the Back Button in Voucher Screen functionality</doc>
+<tag>smoke</tag>
+<status status="PASS" start="2024-02-15T19:26:06.771054" elapsed="19.673478"/>
+</test>
+<status status="PASS" start="2024-02-15T19:26:06.583743" elapsed="19.860789"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Voucher">Voucher</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
